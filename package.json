@@ -1,0 +1,24 @@
+{
+  "name": "mynft-batch-minting",
+  "version": "1.0.0",
+  "description": "High-performance batch NFT minting contract with Forge and JavaScript interfaces",
+  "type": "module",
+  "scripts": {
+    "deploy": "node scripts/deploy.js",
+    "mint": "node scripts/mint.js",
+    "debug": "node scripts/debug.js",
+    "network-info": "node scripts/network-info.js",
+    "check-tx": "node scripts/check-tx.js",
+    "forge:deploy": "forge script script/Deploy.s.sol --rpc-url $RPC_URL --broadcast",
+    "forge:mint": "forge script script/MintNFTs.s.sol --rpc-url $RPC_URL --broadcast",
+    "forge:build": "forge build",
+    "forge:test": "forge test -v"
+  },
+  "dependencies": {
+    "viem": "^2.21.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}
